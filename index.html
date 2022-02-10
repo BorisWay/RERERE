@@ -2,13 +2,25 @@
 <html lang="en"> <!-- Тег бывает парным и одиночным, lang это атрибут тега html-->
 <head> <!-- Все необходимые данные о документе, head содержит данные о html док-те, заголовок, описание, информация, подключение стилей, шрифтов и т.д.-->
     <meta charset="UTF-8"> <!-- charset это атрибут тега meta, utf-8 кодировка символов в кодировке -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- одиночный -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- одиночный, тег для IE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Таблица стилей-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <!-- Добавляем шрифты-->
     <title>Document</title>
 </head> <!-- информация указанная в head не будет отрендерена на странице браузера -->
 <body> <!-- в Body содержится вся разметка, рендерится браузером, весь контент и т.д. -->
     <h1>Привет мир!</h1><!-- Любой контент должен быть обёрнут в тег, которые и описывает контент-->
-    
-
+    <!--[if IE]>
+        <p>Текст виден только на IE</p>
+        <![if lt IE 10]>
+           <p>Текст виден на новых версиях IE или Edge</p>
+        <![endif]-->
+    <!--Exterbak scripts files-->
+    <script src="main.js"></script>
+    <!-- Local scripts-->
+    <script> 
+        console.log('Hello world'); // запуск скриптов помещают обычно в конце док-та
+    </script>
 </body>
 </html>
