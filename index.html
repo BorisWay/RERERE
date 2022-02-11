@@ -110,6 +110,93 @@
         </dt>
     </dl>
     <h2>Изображения</h2>
-    
+    <img src="https://picsum.photos/300/300" alt="Картинка">
+    <picture> <!-- Лучше это делать в CSS -->
+        <source media="(min-width: 1024px)" srcset="https://picsum.photos/600/600">
+        <source media="(min-width: 768px)" srcset="https://picsum.photos/300/300">
+        <source media="(min-width: 360px)" srcset="https://picsum.photos/100/100">
+        <img src="https://picsum.photos/300/300" alt="Картинка">
+    </picture>
+    <figure> <!-- Картинка и описание в figcaption -->
+        <img src="https://picsum.photos/300/300" alt="" >
+        <figcaption>Просто описание фото</figcaption>
+    </figure>
+    <figure> <!-- Картинка и описание в figcaption -->
+        <img src="https://picsum.photos/300/300" alt="" >
+        <figcaption>Просто описание фото</figcaption>
+    </figure>
+    <h2>Таблицы</h2>
+    <table border="2"> <!-- Контейнер для всех вложенных структур -->
+        <tr> <!-- Строка таблицы -->
+            <td>Значение</td> <!-- Ячейка таблицы с информацией -->
+        </tr>
+    </table>
+    <hr>
+    <table border="2"> <!-- Так лучше не делать, это всё должно быть в CSS -->
+        <tr>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="2">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="2">
+        <caption>Заголок таблицы</caption>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <table border="2">
+        <caption>Заголок таблицы</caption> <!-- thead, tbody, tfoot только в таком порядке -->
+        <thead> <!-- Только один раз внутри одной таблицы -->
+            <tr>
+                <th>Количество</th>
+                <th>Качество</th>
+                <th>Что-то ещё</th>
+            </tr>
+        </thead>
+        <tbody> <!-- Количество неограничено -->
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+        <tfoot> <!-- Одна или несколько строк в конце таблицы, только один раз -->
+            <tr>
+                <td colspan="3">15</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
