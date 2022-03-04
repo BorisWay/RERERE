@@ -7,6 +7,193 @@
     <title>Global structure</title>
 </head>
 <body>
-    
+    <header> <!-- Шапка сайта или заголовок -->
+    <nav>
+        <!-- навигация, приоритетные ссылки -->
+    </nav>
+    </header>
+    <main>
+        <form action="formHandler.php" name="simple form" autocomplete="on"> 
+            <input type="text">
+            <br>
+        </form>
+        <form action="formHandler.php" name="simple form2" autocomplete="on">
+            <fieldset>
+                <legend>Simple form legend</legend>
+                <input type="text">
+                <br>
+            </fieldset>
+        </form>
+        <form action="formHandler.php" name="simple form3" autocomplete="on">
+            <hr>
+            <label for="username">Username</label>
+            <input id="username">
+            <br>
+            <label>
+                Password    
+                <input type="password">
+            </label>
+        </form>
+        <form action="formHandler.php" name="simple form4" autocomplete="on">
+            <fieldset>
+                <legend>Personal data</legend>
+                <label for="name">Your name</label>
+                <input type="text" id="name">
+                <br>
+                <label for="speciality">Choose your speciality</label>
+            </fieldset>
+        </form>
+        <form action="formHandler.php" name="simple form4" autocomplete="on">
+        <textarea rows="10" cols="45" style="margin: 0p; height: 127px; width:244px;"></textarea>
+        <br>
+        <textarea name="test" cols="20" rows="5"></textarea>
+        <br>
+        <textarea name="test" cols="20" rows="5" autofocus></textarea>
+        <br>
+        <textarea name="test" cols="20" rows="5" disabled></textarea>
+        <br>
+        <textarea name="test" cols="20" rows="5" readonly></textarea>
+        <br>
+        <textarea name="test" cols="20" rows="5" placeholder="your message..."></textarea>
+        <br>
+        <textarea name="test" cols="20" rows="5" maxlength="5"></textarea>
+        <br>
+        <textarea name="test" cols="20" rows="5" required minlength="3"></textarea>
+        <br>
+        <hr>
+        </form>
+        <form>
+            <textarea cols="20" rows="5" required></textarea>
+            <br>
+            <input type="submit" value="Send">
+        </form>
+        <hr>   
+        <select>
+            <option value="Front-end">Front-end</option>
+            <option value="Back-end">Back-end</option>
+        </select>
+        <select>
+            <optgroup label="Speciality">
+            </optgroup> 
+            <optgroup laber="Direction">
+            </optgroup>
+        </select>
+        <hr>
+        <select multiple>
+            <option value="Front-end">Front-end</option>
+            <option value="Back-end">Back-end</option>
+        </select>
+        <hr>
+        <select>
+            <option value="Front-end">Front-end</option> 
+            <option value="Back-end" label="Back-end"></option>
+            <option value="sel" selected>Selected</option>
+            <option value="dis" disabled>Disabled</option>
+        </select>
+        <!-- Внутри тега отображается на UI, а value идёт на сервер при отправке формы  -->
+        <hr>
+        <!-- Input -->
+        <input type="text">
+        <hr>
+        <input type="number">
+        <br>
+        <input type="number" min="1" max="10">
+        <br>
+        <input type="number" step="5">
+        <br>
+        <hr>
+        <input type="password">
+        <hr>
+        <input type="range">
+        <hr>
+        <input type="date">
+        <hr>
+        <input type="color">
+        <hr>
+        <input type="submit" value="Submit form">
+        <br>
+        <input type="reset" value="Reset form">
+        <br>
+        <hr>
+        <input type="text" list="list">
+        <datalist id="list">
+            <option value="Front-end"></option>
+            <option value="Back-end"></option>
+            <option value="Full-stack"></option>
+        </datalist>
+        <hr>
+        <input type="email">
+        <hr>
+        <input type="url">
+        <hr>
+        <input type="image" src="htttps://picsum.photos/300/300" alt="Just image">
+        <hr>
+        <input type="tel">
+        <hr>
+        <input type="search">
+        <hr>
+        <input type="datetime-local">
+        <hr>
+        <input type="month">
+        <hr>
+        <input type="time">
+        <hr>
+        <input type="week">
+        <hr>
+        <input type="hidden" value="webdev">
+        <hr>
+        <input type="file">
+        <br>
+        <input type="file" multiple>
+        <br>
+        <hr>
+        <input type="checkbox" value="option1">
+        <input type="checkbox" value="option2">
+        <input type="checkbox" value="option3">
+        <br>
+        <hr>
+        <input type="radio" name="value" id="option1" checked>
+        <br>
+        <input type="radio" name="value" id="option2">
+        <br>
+        <input type="radio" name="value" id="option3">
+        <hr>
+        <label>
+            <input type="radio" name="value" value="option1">
+            Front-end
+        </label>
+        <hr>
+        <!-- Медиа файлы -->
+        <audio src="example.mp3">
+            Your browser does not support the audio tag.
+        </audio>
+        <hr>
+        <video width="320" height="240">
+            <source src="example.ogg" type="video/ogg">
+            <source stc="example.mp4" type="video/mp4">
+        </video>
+        <hr>
+        <audio controls src="example.mp3">
+        </audio>
+        <hr>
+        <video controls autoplay muted loop poster="preview.png" width="320" height="240">
+        </video>
+        <hr>
+        
+        <!-- важный контент -->
+        <section> <!-- может включать header и footer -->
+            <article>
+                <!-- задаёт содержание сайта, семантически выделенный блок информации -->
+            </article>
+        </section>
+    </main>
+    <aside>
+        <!-- блок справа или слева, доп инфа -->
+    </aside>
+    <footer>
+        <!-- имя автора, copyright, доп. инф -->
+    </footer>
 </body>
 </html>
+
+<!-- https://caniuse.com/ -->

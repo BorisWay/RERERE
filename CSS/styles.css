@@ -1,0 +1,95 @@
+@import "main.css";
+
+
+
+
+/* Селекторы */
+/* сразу для всех элементов */
+
+/* селектор по имени тега */
+h2{
+    color:green;
+}
+
+a:hover{
+    color:red;
+}
+
+a:visited{
+    color:aqua;
+}
+
+a:active{
+    color:green;
+}
+
+a:focus{
+    font-weight: bold;
+}
+
+p::first-letter{
+    font-size: 40px;
+}
+
+p::first-line{
+    text-decoration: underline;
+}
+
+p::selection{
+    background-color: yellow;
+    color:red;
+}
+
+h1::before{
+    content:"this is ";
+    text-transform:uppercase;
+}
+
+h1::after{
+    content:" channel";
+    color:red;
+}
+
+.list1 li:first-child {
+    color:blue;
+}
+
+.list1 li:last-child{
+    color:green;
+}
+
+.list2 li:nth-child(even){
+    color:blue;
+}
+
+.list2 li:nth-child(odd){
+    color:green;
+}
+
+.list3 li:nth-child(3n + 1){
+    text-transform: uppercase;
+}
+
+.list3 li:nth-child(4n + 2){
+    color:green;
+}
+
+.text span:first-of-type{
+    color:red;
+}
+
+.text span:last-of-type{
+    color:green;
+}
+
+.text span:nth-of-type(2){
+    border: 1px solid black;
+}
+
+.list4 li:not(.item){
+    color:green;
+}
+
+
+
+/* для стилизации элемента класс, для логики id */
