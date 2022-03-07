@@ -1,0 +1,42 @@
+/*
+p {
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+
+.style1{
+    background-color: aqua;
+    color:black;
+    border: none !important;
+}
+
+#style2{
+    background-color: pink;
+    border: 2px solid black;
+}
+
+P{
+    background-color: grey;
+}
+
+ Каскадность */
+
+body{
+    color:red;
+    border: 1px solid black; /* Рамки, границы, позиционирование не наследуются */
+    margin-bottom: 30px;
+}
+
+p{
+    border: inherit; /* наследование стилей */
+    margin: inherit;
+}
+
+a{
+    color:red;
+}  
+
+
+
+
