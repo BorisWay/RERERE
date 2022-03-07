@@ -1,0 +1,43 @@
+.wrapper,
+.wrapper2,
+.item{
+    padding:20px;
+    color:white;
+}
+
+.item{
+    float:left;
+    width: 150px;
+}
+
+img{
+    float:right;
+}
+
+.wrapper{
+    background-color: grey;
+}
+
+.wrapper:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.wrapper2{
+    background-color: green;
+}
+
+.item1{
+    background-color: crimson;
+    float:left;
+}
+
+.item2{
+    background-color: cyan;
+    float:right;
+}
+
+.item3{
+    background-color: blueviolet;
+}
