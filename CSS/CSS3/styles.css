@@ -1,0 +1,33 @@
+span,
+div{
+    border: 10px solid red;
+    margin: 10px;
+    padding: 10px;
+    padding: 10px 20px 30px 40px;
+    /* Сверху | Справа | Снизу | Слева */
+    margin: 10px 20px; /* Сверху-снизу 10, по бокам 20 */
+    padding-top: 10px; /* Сверху */
+    padding-right: 20px;/* Справа */
+    padding-bottom: 30px; /* Снизу */
+    padding-left: 40px; /* Слева */
+    /* Для строчных не работает margin-top и margin-bottom */
+}
+
+.test{
+    display:inline;
+}
+
+.mar {
+    margin-top: 50px; /* применяется больший отступ, если 10 то 10 просто */
+    width: 100px;
+    height: 100px;
+    display:inline-block;
+    box-sizing: border-box;
+}
+/*
+span {
+    width: 100px;
+    height: 100px;
+    для строчного элемента размеры игнорируются
+}
+*/
