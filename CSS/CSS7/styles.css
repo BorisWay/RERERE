@@ -1,0 +1,26 @@
+/* Безопасные шрифты css */
+@font-face {
+    font-family: "Roboto";
+    src: url("/CSS/CSS7/Fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+body{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color:aqua;
+    text-decoration: underline overline line-through;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    line-height: 100px;
+    text-transform: uppercase capitalize;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    text-indent: 20px;
+}
