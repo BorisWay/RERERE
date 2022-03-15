@@ -1,0 +1,28 @@
+.example{
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin: 20px;
+
+    /* border-radius: 50px 40px 30px 20px;*/
+    /* border-radius: 20px/40px;  горизонталь / вертикаль */
+
+    border-top-left-radius: 50px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 20px;
+}
+    ul li{
+        list-style-type: circle;
+        list-style-position: inside;
+        /* list-style-image: вместо маркера своя картинка */
+         
+    }
+
+    h1{
+        color: #f500d4;
+        color: rgb(255,0,0);
+        color:#1a1aa1;
+        color: hsl(0,100%,50%);
+        color:rgba(255,0,0,1);
+    }
