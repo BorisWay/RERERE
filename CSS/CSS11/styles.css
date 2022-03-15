@@ -1,0 +1,25 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    min-height: 100vh;
+    width: 100%;
+
+    /* border-right-color: gainsboro; */
+    /* background-image: url(https://images.wallpaperscraft.com/image/single/mountains_lake_tops_top_view_119133_1920x1080.jpg); */
+    /* background-size: 300px 150px; */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-y; */
+    /* background-position: right bottom; */
+    /* background-position: 50% 50%; */
+    /* background-attachment: fixed; */
+    /* background: gainsboro */
+    /* url(https://images.wallpaperscraft.com/image/single/mountains_lake_tops_top_view_119133_1920x1080.jpg)
+    50% 50% no-repeat fixed; */
+
+    background: url(https://i.pinimg.com/originals/71/6f/e3/716fe300cd30c29a43ea82ae60c649b9.png) 100px 200px no-repeat fixed,
+    url(https://images.wallpaperscraft.com/image/single/mountains_lake_tops_top_view_119133_1920x1080.jpg)
+    center no-repeat;
+}
