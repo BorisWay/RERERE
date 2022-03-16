@@ -1,0 +1,31 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    border: 2px solid black;
+    height: 169px;
+
+    /* overflow: hidden; */
+}
+
+img{
+    transition: all 1s ease;
+    transform-origin: 50px 100px;
+}
+
+img:hover{
+    /* transform: rotate(-360deg); */
+    /* transform:scale(2,1.5); */
+    /* transform:scale(1.2); */
+    /* transform:translate(50px,80px); */
+    /* transform: translateX() */
+    /* transform:skew(21deg,21deg); */
+    /* transform: rotate(10deg) scale(1.2) skew(10deg); */
+    transform:rotate(90deg);
+}
