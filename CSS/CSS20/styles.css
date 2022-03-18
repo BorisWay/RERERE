@@ -1,0 +1,65 @@
+body {
+    padding: 10px 30px;
+    margin: 0;
+    height: 100vh;
+    background-color: lightgrey;
+    font-size: 24px;
+    font-family: monospace;
+}
+
+input {
+    font-size: 24px;
+    padding: 5px 10px;
+
+    color:red;
+}
+
+::placeholder {
+    color:blue;
+    opacity: 1;
+}
+
+::-ms-input-placeholder{
+    color:blue;
+}
+
+:-ms-input-placeholder{
+    color:blue;
+}
+
+::-webkit-scrollbar{
+    width: 25px;
+    background: #101124;
+}
+
+::-webkit-scrollbar-track{
+    border: 5px solid rgba(255,255,255,0.25);
+    box-shadow: inset 0 0 2.5px 2px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(45deg, #00ffa1, #00ffff);
+    border-radius: 15px;
+}
+
+button {
+    width: 200px;
+    height: 150px;
+    background-image: url(image.png);
+    background-position: top;
+    background-size: cover;
+    text-indent: -9999px;
+    border:none;
+    background-color: transparent;
+    cursor:pointer;
+    outline:grey;
+}
+
+button:hover{
+    background-position: center;
+    /* transform:scale(1.1); */
+}
+
+button:active{
+    background-position: bottom;
+}
